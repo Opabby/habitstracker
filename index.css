@@ -1,13 +1,105 @@
+:root {
+    --violet: #8B5CF6;
+}
+
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, 'sans-serif';
 }
 
 body{
     background-color: #09090A;
     color: #fff;
-    padding: 3rem 3rem;
-    display: grid;
-    place-items: center;
+    margin: 3rem 3rem;
     height: 100vh;
-    box-sizing: border-box;
 }
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin: 3rem 0;
+}
+
+button {
+    border: 1px solid var(--violet);
+    background-color: inherit;
+    border-radius: 8px;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+form {
+    display: flex;
+}
+
+.habits {
+    margin-top: 60px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.habit {
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    display: flex;
+    margin-left: 32px;
+    gap: 48px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div{
+    margin-bottom: 8px;
+    font-family: Roboto Mono, 'sans-serif';
+    text-align: center;
+    color: #A1A1AA;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 125%;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #27272A;
+    border-radius: 8px;
+    background: #18181B;
+}
+
+input:checked{
+    background: #8B5CF6;
+    border: 2px solid #A78BFA;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
